@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>小史不会浪漫</title>
+		<style>
+			html,
+			body {
+				height: 100%;
+			}
+
+			*,
+			::before,
+			::after {
+				margin: 0px;
+				padding: 0;
+			}
+
+			.pink {}
+
+			body {
+				margin: 0;
+				padding: 0;
+				background: #ffa5a5;
+				/*定义body 渐变，向页面。*/
+				/*background: linear-gradient(to bottom, #ffa5a5 0%,#ffd3d3 100%);*/
+			}
+
+			.pink {
+				background-color: #e2e2e2;
+			}
+
+			.pink .heart {
+				background: linear-gradient(-90deg, #e19393 0%, #ffa5a5 40%);
+				animation: beatpink 0.7s ease 0s infinite normal;
+			}
+
+			.pink .heart.center {
+				background: linear-gradient(-45deg, #ffa5a5 0%, #ffa5a5 40%);
+			}
+
+			/* 全局 */
+			.chest {
+				width: 500px;
+				height: 500px;
+				margin: 0 auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			/* haret 整体部分 */
+			.heart {
+				position: absolute;
+				z-index: 2;
+				background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+				animation: beat 0.7s ease 0s infinite normal;
+			}
+
+			/* 心的中心 */
+			.heart.center {
+				background: linear-gradient(-45deg, #B80734 0%, #d5093c 40%);
+			}
+
+			/* 心的顶部 */
+			.heart.top {
+				z-index: 3;
+			}
+
+			/* 侧边 */
+			.side {
+				top: 100px;
+				width: 220px;
+				height: 220px;
+				border-radius: 110px;
+			}
+
+			/* 中间爱心 */
+			.center {
+				width: 210px;
+				height: 210px;
+				bottom: 100px;
+				left: 145px;
+				transform: rotateZ(225deg);
+				/*transform: rotate(45deg);*/
+			}
+
+			/* 左边爱心 */
+			.left {
+				left: 62px;
+			}
+
+			/* 右边爱心 */
+
+			.right {
+				right: 62px;
+			}
+
+
+			@keyframes beat {
+				0% {
+					transform: scale(1) rotate(225deg);
+					box-shadow: 0 0 40px #d5093c;
+				}
+
+				50% {
+					transform: scale(1.1) rotate(225deg);
+					box-shadow: 0 0 70px #d5093c;
+				}
+
+				100% {
+					transform: scale(1) rotate(225deg);
+					box-shadow: 0 0 40px #d5093c;
+				}
+			}
+
+			@keyframes beatpink {
+				0% {
+					transform: scale(1) rotate(225deg);
+					box-shadow: 0 0 40px #ffa5a5;
+				}
+
+				50% {
+					transform: scale(1.1) rotate(225deg);
+					box-shadow: 0 0 70px #ffa5a5;
+				}
+
+				100% {
+					transform: scale(1) rotate(225deg);
+					box-shadow: 0 0 40px #ffa5a5;
+				}
+			}
+
+			footer {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				color: #ca8484;
+				opacity: .3;
+				animation: btt .5s ease-in-out;
+				font-size: 30px;
+			}
+
+			footer h1 {
+				margin-right: 30px;
+			}
+
+			footer p {
+				margin-top: 10px;
+			}
+
+			@keyframes btt {
+				from {
+					transform: translateY(-10px);
+				}
+
+				to {
+					transform: translateY(0px);
+				}
+			}
+
+			.contentText {
+				position: fixed;
+				top: 40px;
+				left: 40px;
+				color: #ca8484;
+				animation: btt 1s;
+				font-size: 30px;
+			}
+
+			.contentText p {
+				margin-top: 10px;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body class="pink">
+		<div class="contentText">
+			<h1>你是我猝不及防的心动，<br>亦是我始料未及的惊鸿❤</h1>
+			<p>You are my unexpected heart, but also my unexpected surprise </p>
+		</div>
+		<div class="chest">
+			<div class="heart left side top"></div>
+			<div class="heart center"></div>
+			<div class="heart right side"></div>
+		</div>
+		<footer>
+			<h1> 史中诺</h1>
+			<p>-----------liuyingli </p>
+		</footer>
+	</body>
+</html>
