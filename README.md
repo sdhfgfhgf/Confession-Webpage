@@ -35,13 +35,13 @@ Optimized for modern browsers and devices using semantic HTML and fluid layout p
 ⸻
 
 🚀 How to Use
-	1.	Clone the repository:
+1.	Clone the repository:
 
-git clone https://github.com/sdhfgfhgf/Confession-Webpage.git
+		git clone https://github.com/sdhfgfhgf/Confession-Webpage.git
 
 
-	2.	Open My_Confession.html or index.html in any modern web browser.
-	3.	Optionally deploy to GitHub Pages or another static site host.
+2.	Open My_Confession.html or index.html in any modern web browser.
+3.	Optionally deploy to GitHub Pages or another static site host.
 
 ⸻
 
